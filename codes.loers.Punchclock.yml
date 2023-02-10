@@ -27,6 +27,6 @@ modules:
       - make -C target/gra-gen install
     sources:
       - type: archive
-        url: "https://gitlab.com/api/v4/projects/41831457/packages/generic/punchclock/0.0.5/punchclock-0.0.5.tar.xz"
-        sha256: "466169b514efc0f4ded73dc0392cedecbc8428dd97d34a82ed005fb6dfc4119b"
+        url: "https://gitlab.com/api/v4/projects/41831457/packages/generic/punchclock/0.0.6/punchclock-0.0.6.tar.xz"
+        sha256: "c45bedc88a0e617e5c696c24cc3cc5785d9b0b279b0b69b14c33b93a61a66d25"
 
