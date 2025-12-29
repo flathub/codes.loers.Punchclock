@@ -1,0 +1,108 @@
+From 86e87575b039a36de72b4cb995e63ba30ba1917b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Tue, 30 Dec 2025 02:22:56 +0300
+Subject: [PATCH 2/2] Fix appdata paper cuts
+
+---
+ .../data/codes.loers.Punchclock.appdata.xml   | 46 ++++++++++++-------
+ 1 file changed, 29 insertions(+), 17 deletions(-)
+
+diff --git a/target/gra-gen/data/codes.loers.Punchclock.appdata.xml b/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
+index 8198fcf..8672ca1 100644
+--- a/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
++++ b/target/gra-gen/data/codes.loers.Punchclock.appdata.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<component type="desktop">
++<component type="desktop-application">
+     <id>codes.loers.Punchclock</id>
+     <name>Punchclock</name>
+     <project_license>GPL-3.0-or-later</project_license>
+@@ -8,9 +8,9 @@
+     <summary>Track time for your tasks.</summary>
+     <url type="homepage">https://www.gitlab.com/floers/punchclock</url>
+     <url type="bugtracker">https://www.gitlab.com/floers/punchclock</url>
++    <url type="vcs-browser">https://www.gitlab.com/floers/punchclock</url>
+     <description>
+         <p>Track time for your tasks.</p>
+-        
+     </description>
+     <launchable type="desktop-id">codes.loers.Punchclock.desktop</launchable>
+     <provides>
+@@ -22,8 +22,12 @@
+         <category>Utility</category>
+     </categories>
+     <screenshots>
+-        <screenshot type="default"><image  type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/small.png</image></screenshot>
+-        <screenshot ><image  type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/large.png</image></screenshot>
++        <screenshot type="default">
++            <image  type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/small.png</image>
++        </screenshot>
++        <screenshot>
++            <image type="source">https://gitlab.com/floers/punchclock/-/raw/main/screenshots/large.png</image>
++        </screenshot>
+     </screenshots>
+     <releases>
+ 
+@@ -41,37 +45,45 @@
+     
+         <release version="0.0.4" date="2022-12-27">
+             <description>
+-                <p>Bug Fixes</p><ul><li>Remove unimplemented settings menu option</li></ul><p>Documentation</p><ul><li>Add homepage and repo urls to manifests</li></ul><p>Miscellaneous Chores</p><ul><li>Update to gnome 43 runtime</li></ul> 
++                <p>Bug Fixes</p>
++                <ul>
++                    <li>Remove unimplemented settings menu option</li>
++                </ul>
++                <p>Documentation</p>
++                <ul>
++                    <li>Add homepage and repo urls to manifests</li>
++                </ul>
++                <p>Miscellaneous Chores</p>
++                <ul>
++                    <li>Update to gnome 43 runtime</li>
++                </ul>
+             </description>
+         </release>
+     
+         <release version="0.0.3" date="2022-12-25">
+             <description>
+-                <p>Miscellaneous Chores</p><ul><li>Upload flatpak artifacts during release</li></ul> 
++                <p>Miscellaneous Chores</p>
++                <ul>
++                    <li>Upload flatpak artifacts during release</li>
++                </ul>
+             </description>
+         </release>
+     
+         <release version="0.0.2" date="2022-12-24">
+             <description>
+-                <p>Bug Fixes</p><ul><li>Stop timer when removing the current task</li></ul> 
++                <p>Bug Fixes</p>
++                <ul>
++                    <li>Stop timer when removing the current task</li>
++                </ul>
+             </description>
+         </release>
+     
+         <release version="0.0.1" date="2022-12-23">
+             <description>
+-                    Initial version
+-                  
++                <p>Initial version</p>
+             </description>
+         </release>
+     </releases>
+     <content_rating type="oars-1.1" />
+-    <requires>
+-        <display compare="gt">360</display>
+-    </requires>
+-    <recommends>
+-        <control>pointer</control>
+-        <control>keyboard</control>
+-        <control>touch</control>
+-    </recommends>
+     <translation type="gettext">Punchclock</translation>
+ </component>
+-- 
+2.52.0
+
